@@ -4,3 +4,7 @@ env/
 
 __init__.py
 
+test.py
+
+__pycache__/
+
