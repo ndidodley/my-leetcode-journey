@@ -4,16 +4,14 @@ def generate(numRows: int) -> List[List[int]]:
         return res
     elif numRows == 2:
         return res
-    start = 1
-    end = 1
     for i in range(numRows - 2):
-        i = 0
-        j = 1
+        x = 0
+        y = 1
         temp = [1]
-        while i < (len(res[-1]) - 1) and j < len(res[-1]):
-            temp.append(res[-1][i] + res[-1][j])
-            i += 1
-            j += 1
+        while x < (len(res[-1]) - 1) and y < len(res[-1]):
+            temp.append(res[-1][x] + res[-1][y])
+            x += 1
+            y += 1
         temp.append(1)
         res.append(temp)
     return res
